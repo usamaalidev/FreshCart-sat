@@ -2,6 +2,7 @@ import {
   Navigate,
   RouterProvider,
   createBrowserRouter,
+  createHashRouter,
 } from "react-router-dom";
 import Layout from "./Components/Layout/Layout";
 import NotFound from "./Pages/NotFound/NotFound";
@@ -22,7 +23,7 @@ import Products from "./Pages/Products/Products";
 import { Offline } from "react-detect-offline";
 
 function App() {
-  const routes = createBrowserRouter([
+  const routes = createHashRouter([
     {
       path: "/",
       element: (
